@@ -1,8 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('lightgallery'), require('@angular/core'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('gocodee-lightbox', ['exports', 'lightgallery', '@angular/core', '@angular/common'], factory) :
-    (factory((global['gocodee-lightbox'] = {}),global.Lightbox,global.ng.core,global.ng.common));
-}(this, (function (exports,Lightbox,i0,common) { 'use strict';
+    (factory((global['gocodee-lightbox'] = {}),global.lightgallery,global.ng.core,global.ng.common));
+}(this, (function (exports,lightgallery,i0,common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -26,8 +26,6 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    /** @type {?} */
-    var lightgell = Lightbox;
     var GocodeeLightboxComponent = /** @class */ (function () {
         function GocodeeLightboxComponent() {
         }
@@ -38,13 +36,12 @@
          * @return {?}
          */
             function () {
-                console.log(this.images);
-                lightgell(this.lightbox.nativeElement);
+                lightgallery.lightGallery(this.lightbox.nativeElement);
             };
         GocodeeLightboxComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'lib-gocodee-lightbox',
-                        template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img src=\"image.thumbnail\" />{{image.thumbnail}}\n    </a>\n  </div>\n  "
+                        template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
                     }] }
         ];
         /** @nocollapse */

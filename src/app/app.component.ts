@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  images: [
+  images = [
     {
       image: 'assets/img/japan_togakushi_lake_mountains_trees_autumn_112493_3840x2160.jpg',
       thumbnail: 'assets/img/japan_togakushi_lake_mountains_trees_autumn_112493_3840x2160.jpg'

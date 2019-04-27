@@ -11,7 +11,18 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "types": ["../../node_modules/lightgallery/dist/js/lightgallery-all.js"],
+    "types": [
+      "jquery",
+      "lg-autoplay",
+      "lg-fullscreen",
+      "lg-hash",
+      "lg-pager",
+      "lg-share",
+      "lg-thumbnail",
+      "lg-video",
+      "lg-zoom",
+      "lightgallery"
+    ],
     "lib": [
       "dom",
       "es2018"

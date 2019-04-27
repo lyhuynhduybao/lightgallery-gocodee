@@ -1,5 +1,5 @@
-import * as Lightbox from 'lightgallery';
-import { Injectable, Component, ViewChild, Input, NgModule, defineInjectable } from '@angular/core';
+import { lightGallery } from 'lightgallery';
+import { Injectable, NgModule, Component, ViewChild, Input, defineInjectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -24,8 +24,6 @@ var GocodeeLightboxService = /** @class */ (function () {
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** @type {?} */
-var lightgell = Lightbox;
 var GocodeeLightboxComponent = /** @class */ (function () {
     function GocodeeLightboxComponent() {
     }
@@ -36,13 +34,12 @@ var GocodeeLightboxComponent = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        console.log(this.images);
-        lightgell(this.lightbox.nativeElement);
+        lightGallery(this.lightbox.nativeElement);
     };
     GocodeeLightboxComponent.decorators = [
         { type: Component, args: [{
                     selector: 'lib-gocodee-lightbox',
-                    template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img src=\"image.thumbnail\" />{{image.thumbnail}}\n    </a>\n  </div>\n  "
+                    template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
                 }] }
     ];
     /** @nocollapse */

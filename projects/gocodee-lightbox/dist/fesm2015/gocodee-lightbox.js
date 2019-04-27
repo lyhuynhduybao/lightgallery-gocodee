@@ -1,4 +1,4 @@
-import * as Lightbox from 'lightgallery';
+import { lightGallery } from 'lightgallery';
 import { Injectable, Component, ViewChild, Input, NgModule, defineInjectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -22,8 +22,6 @@ GocodeeLightboxService.ctorParameters = () => [];
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** @type {?} */
-const lightgell = Lightbox;
 class GocodeeLightboxComponent {
     constructor() {
     }
@@ -31,8 +29,7 @@ class GocodeeLightboxComponent {
      * @return {?}
      */
     ngOnInit() {
-        console.log(this.images);
-        lightgell(this.lightbox.nativeElement);
+        lightGallery(this.lightbox.nativeElement);
     }
 }
 GocodeeLightboxComponent.decorators = [
@@ -41,7 +38,7 @@ GocodeeLightboxComponent.decorators = [
                 template: `
   <div #lightgallery>
     <a href="image.image" *ngFor="let image of images">
-      <img src="image.thumbnail" />{{image.thumbnail}}
+      <img [src]="image.thumbnail" />
     </a>
   </div>
   `
