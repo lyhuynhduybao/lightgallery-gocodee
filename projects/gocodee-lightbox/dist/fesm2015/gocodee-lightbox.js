@@ -36,8 +36,8 @@ GocodeeLightboxComponent.decorators = [
     { type: Component, args: [{
                 selector: 'lib-gocodee-lightbox',
                 template: `
-  <div #lightgallery>
-    <a href="image.image" *ngFor="let image of images">
+  <div #lightbox>
+    <a [href]="image.image" *ngFor="let image of images">
       <img [src]="image.thumbnail" />
     </a>
   </div>
@@ -47,7 +47,7 @@ GocodeeLightboxComponent.decorators = [
 /** @nocollapse */
 GocodeeLightboxComponent.ctorParameters = () => [];
 GocodeeLightboxComponent.propDecorators = {
-    lightbox: [{ type: ViewChild, args: ['lightgallery',] }],
+    lightbox: [{ type: ViewChild, args: ['lightbox',] }],
     images: [{ type: Input, args: ['images',] }]
 };
 

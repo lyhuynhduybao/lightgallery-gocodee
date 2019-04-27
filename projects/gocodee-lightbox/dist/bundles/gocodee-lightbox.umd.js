@@ -41,13 +41,13 @@
         GocodeeLightboxComponent.decorators = [
             { type: i0.Component, args: [{
                         selector: 'lib-gocodee-lightbox',
-                        template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
+                        template: "\n  <div #lightbox>\n    <a [href]=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
                     }] }
         ];
         /** @nocollapse */
         GocodeeLightboxComponent.ctorParameters = function () { return []; };
         GocodeeLightboxComponent.propDecorators = {
-            lightbox: [{ type: i0.ViewChild, args: ['lightgallery',] }],
+            lightbox: [{ type: i0.ViewChild, args: ['lightbox',] }],
             images: [{ type: i0.Input, args: ['images',] }]
         };
         return GocodeeLightboxComponent;

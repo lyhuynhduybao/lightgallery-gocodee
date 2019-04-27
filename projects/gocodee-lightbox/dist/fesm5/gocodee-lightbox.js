@@ -1,5 +1,5 @@
 import { lightGallery } from 'lightgallery';
-import { Injectable, NgModule, Component, ViewChild, Input, defineInjectable } from '@angular/core';
+import { Injectable, Component, ViewChild, Input, NgModule, defineInjectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -39,13 +39,13 @@ var GocodeeLightboxComponent = /** @class */ (function () {
     GocodeeLightboxComponent.decorators = [
         { type: Component, args: [{
                     selector: 'lib-gocodee-lightbox',
-                    template: "\n  <div #lightgallery>\n    <a href=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
+                    template: "\n  <div #lightbox>\n    <a [href]=\"image.image\" *ngFor=\"let image of images\">\n      <img [src]=\"image.thumbnail\" />\n    </a>\n  </div>\n  "
                 }] }
     ];
     /** @nocollapse */
     GocodeeLightboxComponent.ctorParameters = function () { return []; };
     GocodeeLightboxComponent.propDecorators = {
-        lightbox: [{ type: ViewChild, args: ['lightgallery',] }],
+        lightbox: [{ type: ViewChild, args: ['lightbox',] }],
         images: [{ type: Input, args: ['images',] }]
     };
     return GocodeeLightboxComponent;

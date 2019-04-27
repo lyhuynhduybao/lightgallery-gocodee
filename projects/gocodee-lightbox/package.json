@@ -10,9 +10,20 @@
     "lib": {
       "entryFile": "src/public_api.ts"
     },
-    "dest": "dist"
+    "dest": "dist",
+    "whitelistedNonPeerDependencies": [
+      "lg-autoplay",
+      "lg-fullscreen",
+      "lg-hash",
+      "lg-pager",
+      "lg-share",
+      "lg-thumbnail",
+      "lg-video",
+      "lg-zoom",
+      "lightgallery"
+  ]
   },
-  "whitelistedNonPeerDependencies": {
+  "dependencies": {
     "lg-autoplay": "^1.0.4",
     "lg-fullscreen": "^1.1.0",
     "lg-hash": "^1.0.4",
@@ -23,5 +34,4 @@
     "lg-zoom": "^1.1.0",
     "lightgallery": "^1.6.12"
   }
-  
 }
