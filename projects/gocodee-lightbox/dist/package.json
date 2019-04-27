@@ -1,0 +1,21 @@
+{
+  "name": "gocodee-lightbox",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  },
+  "main": "bundles/gocodee-lightbox.umd.js",
+  "module": "fesm5/gocodee-lightbox.js",
+  "es2015": "fesm2015/gocodee-lightbox.js",
+  "esm5": "esm5/gocodee-lightbox.js",
+  "esm2015": "esm2015/gocodee-lightbox.js",
+  "fesm5": "fesm5/gocodee-lightbox.js",
+  "fesm2015": "fesm2015/gocodee-lightbox.js",
+  "typings": "gocodee-lightbox.d.ts",
+  "metadata": "gocodee-lightbox.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

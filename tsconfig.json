@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "gocodee-lightbox": [
+        "dist/gocodee-lightbox"
+      ],
+      "gocodee-lightbox/*": [
+        "dist/gocodee-lightbox/*"
+      ]
+    }
   }
 }
