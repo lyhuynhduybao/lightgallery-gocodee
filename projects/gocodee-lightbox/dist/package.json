@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^7.1.0",
-    "@angular/core": "^7.1.0"
-  },
-  "dependencies": {
+    "@angular/core": "^7.1.0",
     "lg-autoplay": "^1.0.4",
     "lg-fullscreen": "^1.1.0",
     "lg-hash": "^1.0.4",
@@ -14,8 +12,7 @@
     "lg-thumbnail": "^1.1.0",
     "lg-video": "^1.2.2",
     "lg-zoom": "^1.1.0",
-    "lightgallery": "^1.6.12",
-    "tslib": "^1.9.0"
+    "lightgallery": "^1.6.12"
   },
   "main": "bundles/gocodee-lightbox.umd.js",
   "module": "fesm5/gocodee-lightbox.js",
@@ -26,5 +23,8 @@
   "fesm2015": "fesm2015/gocodee-lightbox.js",
   "typings": "gocodee-lightbox.d.ts",
   "metadata": "gocodee-lightbox.metadata.json",
-  "sideEffects": false
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }
